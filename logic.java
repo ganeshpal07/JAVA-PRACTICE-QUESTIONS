@@ -77,33 +77,52 @@ public class logic {
 
     // Create a simple calculator using +, -, *, /, %.
 
+    // public static void main(String[] args) {
+    //     Scanner sc = new Scanner(System.in);
+    //     System.out.println("num1: ");
+    //     double num1 = sc.nextDouble();
+
+    //     System.out.println("num2: ");
+    //     double num2 = sc.nextDouble();
+
+    //     System.out.print("choose operator +, -, *, /, % : ");
+    //     String operator = sc.next();
+
+    //     if (operator.equals("+")) {
+    //         System.out.println("result =" + (num1 + num2));
+    //     } else if (operator.equals("-")) {
+    //         System.out.println("result =" + (num1 - num2));
+    //     } else if (operator.equals("*")) {
+    //         System.out.println("result =" + (num1*num2));
+    //     } else if (operator.equals("/")) {
+    //         System.out.println("result =" + (num1/num2));
+    //     } else if (operator.equals("%")) {
+    //         System.out.println("result =" + (num1%num2));
+    //     } else{
+    //         System.out.println("invalid operator");
+    //     }
+
+    //     sc.close();
+    //     }
+
+
+
+
+    // Check whether a year is a leap year.
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("num1: ");
-        double num1 = sc.nextDouble();
+         System.out.println("enter year: ");
+         int year = sc.nextInt();
 
-        System.out.println("num2: ");
-        double num2 = sc.nextDouble();
-
-        System.out.print("choose operator +, -, *, /, % : ");
-        String operator = sc.next();
-
-        if (operator.equals("+")) {
-            System.out.println("result =" + (num1 + num2));
-        } else if (operator.equals("-")) {
-            System.out.println("result =" + (num1 - num2));
-        } else if (operator.equals("*")) {
-            System.out.println("result =" + (num1*num2));
-        } else if (operator.equals("/")) {
-            System.out.println("result =" + (num1/num2));
-        } else if (operator.equals("%")) {
-            System.out.println("result =" + (num1%num2));
-        } else{
-            System.out.println("invalid operator");
+        if (year %  4 == 0 || year % 400 == 0) {
+            System.out.println("this is a leap year");
+        } else {
+            System.out.println("not a leap year");
         }
-
         sc.close();
-        }
+
+    }
     }
     
 
